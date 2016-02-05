@@ -7,7 +7,7 @@ from flask.ext.script import Manager, Shell
 from flask.ext.migrate import Migrate, MigrateCommand
 
 #app = create_app(os.getenv('FLASK_CONFIG') or 'default')
-app = create_app('default')
+app = create_app('heroku')
 manager = Manager(app)
 migrate = Migrate(app, db)
 '''MigrateCommand类的命令通过db添加到shell中
@@ -30,4 +30,4 @@ def test():
     tests = unittest.TestLoader().discover('tests')
     unittest.TextTestRunner(verbosity=2).run(tests)
 if __name__ == '__main__':
-    manager.run()
+    app.run()
