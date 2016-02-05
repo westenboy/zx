@@ -1,1 +1,1 @@
-web: gunicorn zhuxiang:app
+web: python zhuxiang.py runserver
