@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
 import os
 
 #basedir为zhuxiang.py即当前文件所在的目录绝对地址

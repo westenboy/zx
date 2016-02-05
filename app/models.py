@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*- 
 from . import db,login_manager
 from werkzeug.security import generate_password_hash,check_password_hash
 from flask.ext.login import UserMixin,AnonymousUserMixin
