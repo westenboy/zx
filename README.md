@@ -3,11 +3,11 @@ base template of flask web development from https://github.com/miguelgrinberg/fl
 
 How do it work? (Windows Platform)
 
-step1: git clone https://github.com/westenboy/zhuxiang
+step1: git clone https://github.com/westenboy/zx
 
 step2: pip install virtualenv
 
-step3: cd zhuxiang virtualenv --no-site-packages venv
+step3: virtualenv --no-site-packages venv
 
 step4: venv\Scripts\activate
 
