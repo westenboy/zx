@@ -1,1 +1,1 @@
-web:gunicorn zhuxiang:app
+web: gunicorn zhuxiang:app
