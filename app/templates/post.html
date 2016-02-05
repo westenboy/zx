@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% import "_macros.html" as macros %}
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}爱心社区 - Post{% endblock %}
+
+{% block page_content %}
+{% include '_posts.html' %}
+<h4 id="comments">Comments</h4>
+<div class="comment-form">
+    {{ wtf.quick_form(form) }}
+</div>
+{% include '_comments.html' %}
+{% if pagination %}
+<div class="pagination">
+    {{ macros.pagination_widget(pagination, 'main.post', fragment='#comments', id=posts[0].id) }}
+</div>
+{% endif %}
+{% endblock %}
