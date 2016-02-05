@@ -11,6 +11,6 @@ step3: virtualenv --no-site-packages venv
 
 step4: venv\Scripts\activate
 
-step5: python manage.py runserver
+step5: python zhuxiang.py
 
 step6: http://localhost:5000
